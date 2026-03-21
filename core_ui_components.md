@@ -40,3 +40,24 @@ Button(
     Text("Submit")
 }
 
+
+🖼️ 3. Image
+Displays images from resources or internet.
+
+🧠 Example (from drawable):
+Image(
+    painter = painterResource(id = R.drawable.sample),
+    contentDescription = "Sample Image"
+)
+
+🔑 Important:
+painter → image source
+contentDescription → accessibility (VERY important)
+💡 With size:
+Image(
+    painter = painterResource(R.drawable.sample),
+    contentDescription = "Profile",
+    modifier = Modifier.size(100.dp)
+)
+
+
