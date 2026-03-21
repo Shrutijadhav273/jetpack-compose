@@ -61,3 +61,20 @@ Image(
 )
 
 
+⭐ 4. Icon
+Small graphical symbol (like heart, menu, back arrow).
+
+🧠 Example:
+Icon(
+    imageVector = Icons.Default.Home,
+    contentDescription = "Home Icon"
+)
+🔑 Key points:
+Uses Material icons
+Lightweight compared to Image
+💡 Clickable Icon:
+Icon(
+    imageVector = Icons.Default.Favorite,
+    contentDescription = "Like",
+    modifier = Modifier.clickable { }
+)
