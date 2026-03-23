@@ -31,3 +31,25 @@ Button(
 ) {
     Text("Submit")
 }
+
+
+🧩 2. Cards
+
+👉 Used to group content (like items, profiles, posts)
+
+✅ Basic Card
+Card(
+    modifier = Modifier
+        .fillMaxWidth()
+        .padding(8.dp)
+) {
+    Text(
+        text = "This is a Card",
+        modifier = Modifier.padding(16.dp)
+    )
+}
+
+📌 Use cases:
+Product items
+Notes
+List items
