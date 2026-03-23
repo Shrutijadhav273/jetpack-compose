@@ -53,3 +53,34 @@ Card(
 Product items
 Notes
 List items
+
+
+
+
+🧩 3. Scaffold (Very Important ⭐)
+
+👉 Provides basic screen structure
+
+It handles:
+
+Top bar
+Bottom bar
+Floating button
+Content area
+✅ Example
+Scaffold(
+    topBar = {
+        TopAppBar(title = { Text("My App") })
+    },
+    floatingActionButton = {
+        FloatingActionButton(onClick = { }) {
+            Text("+")
+        }
+    }
+) { paddingValues ->
+
+    Text(
+        text = "Hello Screen",
+        modifier = Modifier.padding(paddingValues)
+    )
+}
