@@ -44,3 +44,20 @@ LazyColumn {
         Text(text = name)
     }
 }
+
+
+🧩 2. LazyRow (Horizontal List)
+
+👉 Same as LazyColumn but horizontal
+
+LazyRow {
+    items(10) { index ->
+        Text(text = "Item $index")
+    }
+}
+
+📌 Use cases:
+
+Image sliders
+Categories
+Stories (like Instagram)
