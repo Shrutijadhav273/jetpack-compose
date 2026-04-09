@@ -69,3 +69,24 @@ fun MyScreen() {
 }
 🧠 Key Point:
 onDispose {} is called when composable is destroyed
+
+
+4. rememberCoroutineScope
+📌 Use when:
+You want to run coroutine on button click or event
+✅ Example:
+@Composable
+fun MyScreen() {
+    val scope = rememberCoroutineScope()
+
+    Button(onClick = {
+        scope.launch {
+            println("Running inside coroutine")
+        }
+    }) {
+        Text("Click Me")
+    }
+}
+🧠 Key Point:
+Used for user actions
+Not automatic like LaunchedEffect
