@@ -27,3 +27,20 @@ fun Counter() {
 🧠 Key Point:
 Runs in coroutine
 Safe for API calls
+
+
+2. SideEffect
+📌 Use when:
+You want to run code after every recomposition
+✅ Example:
+@Composable
+fun MyScreen(name: String) {
+    SideEffect {
+        println("Runs every recomposition: $name")
+    }
+
+    Text(name)
+}
+🧠 Key Point:
+Runs again and again
+Avoid heavy work here ❌
