@@ -36,7 +36,7 @@ LazyColumn {
 📌 Output:
 
 Scrollable vertical list
-✅ With Data List
+✅With Data List
 val names = listOf("Shruti", "Amit", "Neha")
 
 LazyColumn {
