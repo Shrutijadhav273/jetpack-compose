@@ -44,3 +44,28 @@ fun MyScreen(name: String) {
 🧠 Key Point:
 Runs again and again
 Avoid heavy work here ❌
+
+
+3. DisposableEffect
+📌 Use when:
+You need cleanup
+Like:
+Stop listener
+Remove observer
+Release resources
+✅ Example:
+@Composable
+fun MyScreen() {
+    DisposableEffect(Unit) {
+
+        println("Start something")
+
+        onDispose {
+            println("Clean up when screen removed")
+        }
+    }
+
+    Text("Hello")
+}
+🧠 Key Point:
+onDispose {} is called when composable is destroyed
